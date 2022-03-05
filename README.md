@@ -18,3 +18,17 @@ This would ensure that the counter (when seeing that a cupcake was gone) knew th
 
 This solution surpasses O(n^2) because of repeat calls and randomization.
 
+## Problem 2
+
+Strategy 1 automatically seems ineffective because there is no guarentee that all guests will see the vase
+
+Strategy 2 sounds better but relies on the communication of one guest to the entirety of the rest of the guests; on top of that, while it allows for all guests to see the vase, does not guarentee a reasonable, nor consistent, amount of time.
+
+Strategy 3 would be the best approach due to its organized nature; there is a guarenteed opportunity for everyone to see the vase. In addition, it requires only the communication between 2 guests at any given moment.
+
+I was going to implement an array based queue lock, but haven't managed my time well enough recently (work and Senior Design got the best of me), handling the re-entry into the queue with very small probabilities. I was going to terminate this program once the queue was empty. I'll just have to do better next time!
+
+### Resources
+- the textbook (primarily chapters 1 and 7; 1 for the prisoners example and 7 for reviewing locks)
+- Java Runnable interface docs: https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html 
+- GeeksforGeeks post on Runnable interface: https://www.geeksforgeeks.org/runnable-interface-in-java/
